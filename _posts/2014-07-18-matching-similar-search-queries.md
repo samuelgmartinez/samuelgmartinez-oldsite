@@ -14,6 +14,7 @@ This this post I'm going to explain a little experiment I developed a few days b
 In our analytics processes **it is very important trying to deduplicate search queries**: first, **because we ease the analytics user job** packing together queries with the same target expressed in diferent ways, for example "rewards catalog" and "catalog of rewards" are matched as diferent queries when, in fact, are the same. And last but not least, it lowers the number of different aggregations we need to perform in each query, **enabling a faster response time**.
 
 <!--more-->
+<a id="read-more"/>
 
 Working with real data we found a lot of problems trying to match this similarity. In spanish, there are users that uses tittles and others don't, there are ones who capitalize, others don't, even we can find a lot of non letter characters like dashes, quotes, etc. So, we thought that transforming to lowercase and removing/translating to a common character set (removing tittles, dashes, etc) would do the work but, sadly nothing could be further from the truth. Here is where clustering algorithms play really nice.
 

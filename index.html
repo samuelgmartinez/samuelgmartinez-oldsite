@@ -6,18 +6,18 @@ tags: [Jekyll, theme, themes, responsive, blog, modern]
 comments: false
 image:
   feature: abstract-1.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
 ---
 
 {% for post in paginator.posts %}
 <article class="hentry">
   <header>
+    {% comment %}
     {% if post.image.feature %}
       <div class="entry-image-index">
         <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
       </div><!-- /.entry-image -->
     {% endif %}
+    {% endcomment %}
     <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
       {% if site.reading_time %}
@@ -35,8 +35,12 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {% if post.excerpt %}
+    {% if post.excerpt and post.link == null %}
       {{ post.excerpt }}
+      <br/>
+      <div style="float:right">
+        <a href="{{ site.url }}{{ post.url }}#read-more" rel="bookmark" title="{{ post.title }}" itemprop="url"><i><b>Read more...</b></i></a>
+      </div>
     {% else %}
         {{ post.content }}
     {% endif %}
