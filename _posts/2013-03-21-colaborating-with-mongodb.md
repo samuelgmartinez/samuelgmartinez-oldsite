@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Colaborating with Mongodb (or trying) "
+title: "Colaborating with Mongodb (or trying to) "
 description: "MongoDB aggregation pipeline improvements."
 image:
   feature: abstract-1.jpg
