@@ -34,10 +34,10 @@ Hey! I'm **Samuel García**, a galician software developer who loves programming
 
 I've been working on software engineering since 2006 when I started programming in J2EE environments and portlet containers such us Liferay or Pluto. Now I lead the tech team at [EmpathyBroker](https://www.empathybroker.com/) where I work mostly on scaling the search (and index) infrastructure and analytics.
 
-My main skills are the ability to learn and the love for problem solving. In programming, I feel confortable programming in Java, Python, C++ and Javascript (sorted in knowledge order).
+My main skills are the ability to learn and the love for problem solving. In programming, I feel confortable programming in Java, Python, C++ and Javascript (sorted in knowledge order).	
 
 In the opensource field I neither lead nor own any project but I've contributed to some projects with patches and designing improvements. The most relevant ones are:
 
-- Mongos aggregation improvements
-- Curator leader election bugfix
-- Solr early stage grouping fixes
+- Mongos aggregation [improvements]()
+- Curator leader election [bugfix](https://github.com/Netflix/curator/issues/115)
+- Solr early stage grouping [fixes](https://issues.apache.org/jira/browse/SOLR-236)
