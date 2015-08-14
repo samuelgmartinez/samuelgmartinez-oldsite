@@ -2,7 +2,6 @@
 layout: post
 title: "Sodas are no longer free!"
 description: "An amazing article about people management."
-excerpt_separator: <!--more-->
 tags: [article, management]
 link: http://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/
 ---

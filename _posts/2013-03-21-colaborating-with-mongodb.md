@@ -2,13 +2,14 @@
 layout: post
 title: "Colaborating with Mongodb (or trying) "
 description: "MongoDB aggregation pipeline improvements."
-excerpt_separator: <!--more-->
+image:
+  feature: abstract-1.jpg
 tags: [mongodb, opensource, tech]
 ---
 
 After a lot of testing about features and performance, we finally switched our analytics storage engine from MySQL to MongoDB.
 
-During our first tests we were surprised by the good write performance (using w=2) compared to MySQL (using MyISAM), which is not that good to be honest. Our first problem was the madurity of the Aggregation Framework, because the query routing and optimization is not good, specially in sharded setups, so we decided to give it a shot reporting those possible improvements using their JIRA (or upvoting them if they were filed already).
+During our first tests we were surprised by the good write performance (using w=2) compared to MySQL (using MyISAM), which is not that good to be honest. Our first problem was the madurity of **the Aggregation Framework**, because the **query routing and optimization is not good, specially in sharded setups**, so we decided to give it a shot reporting those possible improvements using their JIRA (or upvoting them if they were filed already).
 
 <!--more-->
 
