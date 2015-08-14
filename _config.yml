@@ -10,15 +10,15 @@ url:
 # Owner/author information
 owner:
   name:           Samuel García
-  avatar:         avatar.jpg
+  avatar:         samuelg2.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
   email:          samuelgmartinez@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter: https://twitter.com/samuelgmartinez
+  twitter: samuelgmartinez
   #facebook:       
-  github: https://github.com/samuelgmartinez
+  github: samuelgmartinez
   stackexchange: http://stackoverflow.com/users/458870/samuel-garc%C3%ADa 
-  linkedin: https://es.linkedin.com/in/samuelgarciamartinez
+  linkedin: samuelgarciamartinez
   #instagram:      
   #flickr:         
   #tumblr:         

@@ -13,6 +13,35 @@
 
 // Global Classes
 // --------------------------------------------------
+.my-avatar {
+	background-position:0 0; 
+	background-size: 220px 220px;
+	width:200px;
+	height:200px;
+	margin: 0 auto 0 auto;
+    border-radius: 50%;
+}
+
+.icons {
+	width: 213px;
+	margin: 0 auto;
+	list-style: none;
+	padding:0px;
+}
+
+.icons li {
+	display: inline-block;
+	font-size: 1.5rem;
+}
+
+.icons li>a {
+	border-bottom: none !important; 
+}
+
+.icons li a i {
+	padding-left: 10px;
+}
+
 .wrap {
 	margin: 0 auto;
 }
