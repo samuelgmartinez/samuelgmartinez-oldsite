@@ -8,7 +8,9 @@ tags: [mongodb, opensource, tech]
 
 After a lot of testing about features and performance, we finally switched our analytics storage engine from MySQL to MongoDB.
 
-During our first tests we were surprised by the good write performance (using w=2) compared to MySQL (using MyISAM), which is not that good to be honest. Our first problem was the madurity of the Aggregation Framework, because the query routing and optimization is not good, specially in sharded setups, so we decided to give it a shot reporting those possible improvements using their JIRA (or upvoting them if they were filed already):
+During our first tests we were surprised by the good write performance (using w=2) compared to MySQL (using MyISAM), which is not that good to be honest. Our first problem was the madurity of the Aggregation Framework, because the query routing and optimization is not good, specially in sharded setups, so we decided to give it a shot reporting those possible improvements using their JIRA (or upvoting them if they were filed already).
+
+<!--more-->
 
 - [SERVER-5477](https://jira.mongodb.org/browse/SERVER-5477): In sharded setups when grouping using the sharding key (or a superset of it) as grouping key mongos should group the sharded results again, because there won't be duplicate group keys across the sharded results.
 - [SERVER-4656](https://jira.mongodb.org/browse/SERVER-4656): The whole dataset is returned after sorting in every mongod and a merge-sort using all sharded results in mongos instead of using a queue for sorting when a limit is added to the pipeline.
